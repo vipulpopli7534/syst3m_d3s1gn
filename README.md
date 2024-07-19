@@ -24,7 +24,7 @@ There’s no single correct approach or solution to a design problem.
 
 The sequence of steps to build large-scale distributed systems.
     
-    1. **Determine system requirements and constraints:** 
+    **1. Determine system requirements and constraints:** 
         Initially, clarify the functional and non-functional requirements of the system. Understanding the constraints is crucial as they influence the overall system design, including budgetary limitations and hardware specifications.
     
     2. Recognize components:
