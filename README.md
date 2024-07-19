@@ -2,7 +2,7 @@ System design aims to build systems that are reliable, effective, and maintainab
 
 ## INTRODUCTION
 
-System Design 
+### System Design 
     
     - Computer Netwroking 
     - Distributed System
@@ -13,9 +13,9 @@ System Design
         - Performance
     - Parallel Computing
 
-There’s no single correct approach or solution to a design problem.
+### There’s no single correct approach or solution to a design problem.
 
-The sequence of steps to build large-scale distributed systems.
+### The sequence of steps to build large-scale distributed systems.
     
     1. Determine system requirements and constraints:
         Initially, clarify the functional and non-functional requirements of the system. Understanding the constraints is crucial as they influence the overall system design, including budgetary limitations and hardware specifications.
