@@ -27,7 +27,7 @@ The sequence of steps to build large-scale distributed systems.
     **1. Determine system requirements and constraints:** 
         Initially, clarify the functional and non-functional requirements of the system. Understanding the constraints is crucial as they influence the overall system design, including budgetary limitations and hardware specifications.
     
-    2. Recognize components:
+    __2. Recognize components:__
          Based on the requirements, select appropriate components, technologies, or APIs for the system design. This could involve choosing storage solutions, databases, or networking protocols that fit the system’s needs.
     
     3. Generate design:
