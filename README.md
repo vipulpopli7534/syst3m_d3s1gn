@@ -5,14 +5,12 @@ System design aims to build systems that are reliable, effective, and maintainab
 System Design 
     
     - Computer Netwroking 
-    
     - Distributed System
         - Robust / Reliable
         - Scalable
         - Available
         - Resilency
         - Performance
-    
     - Parallel Computing
 
 There’s no single correct approach or solution to a design problem.
