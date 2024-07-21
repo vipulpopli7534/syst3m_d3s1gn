@@ -62,3 +62,5 @@ The data remains as close as to the data from source of truth will be more consi
         In temporal failures, the node generates correct results, but is too late to be useful. 
     - Byzantine
         In Byzantine failures, the node exhibits random behavior like transmitting arbitrary messages at arbitrary times, producing wrong results, or stopping midway.
+
+
