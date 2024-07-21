@@ -66,13 +66,20 @@ The data remains as close as to the data from source of truth will be more consi
 ### Non Functional Chracteristics
 
 #### Availability
-
+    Availability is the percentage of time that some service or infrastructure is accessible to clients and is operated upon under normal conditions.
 #### Reliability
-
+    Measures how well a system performs its intended operations (functional requirements). We use averages for that (Mean Time to Failure, Mean Time to Repair, etc.)
 #### Scalability
+    Scalability is the ability of a system to handle an increasing amount of workload without compromising performance.
 
+    -Vertical / Up : Increasing the capacity of machine
+    -Horizontal / Out: Increasing the  number of machines
 #### Maintainability
+    Besides building a system, one of the main tasks afterward is keeping the system up and running by finding and fixing bugs, adding new functionalities, keeping the system’s platform updated, and ensuring smooth system operations.
 
+    - Operability -  keep the system operational under diff situations
+    - Lucidity - Simple system to maintain
+    - Modificability -  Easy to modify to meet future requirements
 #### Fault Tolerance
 
 
