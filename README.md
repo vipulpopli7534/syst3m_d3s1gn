@@ -29,7 +29,7 @@ System design aims to build systems that are reliable, effective, and maintainab
          Finally, refine the design by discussing potential trade-offs. This involves balancing different aspects such as cost, performance, and scalability to optimize the design. Iterative improvements are made based on feedback and further analysis.
 
 
-### Consistency
+## Consistency
 
 The data remains as close as to the data from source of truth will be more consistence data.
 
@@ -46,7 +46,7 @@ The data remains as close as to the data from source of truth will be more consi
         This model ensures that a read request from any replicas will get the latest write value EX - account password update 
 
 
-### System Failures
+## System Failures
 
     Failures are obvious in the world of distributed systems and can appear in various ways. They might come and go, or persist for a long period.
 
@@ -63,24 +63,24 @@ The data remains as close as to the data from source of truth will be more consi
     - Byzantine
         In Byzantine failures, the node exhibits random behavior like transmitting arbitrary messages at arbitrary times, producing wrong results, or stopping midway.
 
-### Non Functional Chracteristics
+## Non Functional Chracteristics
 
-#### Availability
+### Availability
     Availability is the percentage of time that some service or infrastructure is accessible to clients and is operated upon under normal conditions.
-#### Reliability
+### Reliability
     Measures how well a system performs its intended operations (functional requirements). We use averages for that (Mean Time to Failure, Mean Time to Repair, etc.)
-#### Scalability
+### Scalability
     Scalability is the ability of a system to handle an increasing amount of workload without compromising performance.
 
     -Vertical / Up : Increasing the capacity of machine
     -Horizontal / Out: Increasing the  number of machines
-#### Maintainability
+### Maintainability
     Besides building a system, one of the main tasks afterward is keeping the system up and running by finding and fixing bugs, adding new functionalities, keeping the system’s platform updated, and ensuring smooth system operations.
 
     - Operability -  keep the system operational under diff situations
     - Lucidity - Simple system to maintain
     - Modificability -  Easy to modify to meet future requirements
-#### Fault Tolerance
+### Fault Tolerance
 
 
 
