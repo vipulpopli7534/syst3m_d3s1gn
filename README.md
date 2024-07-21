@@ -29,4 +29,18 @@ System design aims to build systems that are reliable, effective, and maintainab
          Finally, refine the design by discussing potential trade-offs. This involves balancing different aspects such as cost, performance, and scalability to optimize the design. Iterative improvements are made based on feedback and further analysis.
 
 
+### Consistency
 
+The data remains as close as to the data from source of truth will be more consistence data.
+
+
+#### Consistency Types (in order of consistency)
+    
+    - Eventual:
+        Least consistense spectrum doesn't gurantees the read will provide the data in sync.It ensures highly available DS EX- DNS resolver config , Cassandra
+    - Causal
+        Ensures the consistency only for the dependant operation or causally linked operations. EX- Commenting system
+    - Sequential
+        Ensures the consistency of a single process.IF multiple processes are running each process will have its own cache replica from the actual DB to have the cosnistency once the update operation is performed DB spawns the callout to each process cache. EX- News feed system. 
+    - Strictly
+        This model ensures that a read request from any replicas will get the latest write value EX - account password upadte 
