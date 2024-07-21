@@ -43,4 +43,22 @@ The data remains as close as to the data from source of truth will be more consi
     - Sequential
         Ensures the consistency of a single process.IF multiple processes are running each process will have its own cache replica from the actual DB to have the cosnistency once the update operation is performed DB spawns the callout to each process cache. EX- News feed system. 
     - Strictly
-        This model ensures that a read request from any replicas will get the latest write value EX - account password upadte 
+        This model ensures that a read request from any replicas will get the latest write value EX - account password update 
+
+
+### System Failures
+
+    Failures are obvious in the world of distributed systems and can appear in various ways. They might come and go, or persist for a long period.
+
+#### Failure Types (in order of severity)
+
+    - Fail Stop:
+        In this type of failure, a node in the distributed system halts permanently. However, the other nodes can still detect that node by communicating with it.
+    - Crash
+        In this type of failure, a node in the distributed system halts silently, and the other nodes can’t detect that the node has stopped working.
+    - Omission
+        In omission failures, the node fails to send or receive messages.
+    - Temporal
+        In temporal failures, the node generates correct results, but is too late to be useful. 
+    - Byzantine
+        In Byzantine failures, the node exhibits random behavior like transmitting arbitrary messages at arbitrary times, producing wrong results, or stopping midway.
