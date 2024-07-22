@@ -86,7 +86,12 @@ The data remains as close as to the data from source of truth will be more consi
     Techniques:
 
         - Replication
-        - Checkpointing
+        - Checkpointing: Checkpointing is a technique that saves the system’s state in stable storage for later retrieval in case of failures due to errors or service disruptions.
+        
+## Back of the envelope Cacl.
+    Involve swift, approximate, and simplified estimations or computations typically done on paper or, figuratively, on the back of an envelope. While these calculations are not intended to yield precise results, they function as a quick and preliminary evaluation of crucial parameters and the feasibility of a system.
+
+    
 
 
 
