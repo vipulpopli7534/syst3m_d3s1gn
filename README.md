@@ -81,6 +81,12 @@ The data remains as close as to the data from source of truth will be more consi
     - Lucidity - Simple system to maintain
     - Modificability -  Easy to modify to meet future requirements
 ### Fault Tolerance
+    Fault tolerance refers to a system’s ability to execute persistently even if one or more of its components fail.
+
+    Techniques:
+
+        - Replication
+        - Checkpointing
 
 
 
