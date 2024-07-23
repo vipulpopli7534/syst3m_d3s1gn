@@ -91,7 +91,27 @@ The data remains as close as to the data from source of truth will be more consi
 ## Back of the envelope Cacl.
     Involve swift, approximate, and simplified estimations or computations typically done on paper or, figuratively, on the back of an envelope. While these calculations are not intended to yield precise results, they function as a quick and preliminary evaluation of crucial parameters and the feasibility of a system.
 
-    
+## Building Blocks
+    The purpose of separating the building blocks is to thoroughly discuss their design just once. This means that later we can use them anywhere without having to go over them in detail again. We can think about building blocks as bricks to construct more effective, capable systems.
+
+#### Domain Name System:
+#### Load Balancers:
+#### Databases:
+#### Key-Value Store:
+#### Content Delivery Network:
+#### Sequencer:
+#### Service Monitoring:
+#### Distributed Caching:
+#### Distributed Messaging Queue:
+#### Publish-Subscribe System:
+#### Rate Limiter:
+#### Blob Store:
+#### Distributed Search:
+#### Distributed Logging:
+#### Distributed Task Scheduling:
+#### Sharded Counters: 
+
+
 
 
 
