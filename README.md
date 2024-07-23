@@ -94,7 +94,14 @@ The data remains as close as to the data from source of truth will be more consi
 ## Building Blocks
     The purpose of separating the building blocks is to thoroughly discuss their design just once. This means that later we can use them anywhere without having to go over them in detail again. We can think about building blocks as bricks to construct more effective, capable systems.
 
-#### Domain Name System:
+#### Domain Name System(DNS):
+    
+    - Its a phone book of an internet to have the mapping b/w the website domain to IP address as to remember the IPs of multiple website is not feasible.
+    - User -> Browser -> ISP -> DNS Arch. -> ISP -> Browser -> Webserver with IPs
+    -  Resource Record: single row in DNS server to get the details is called RR.
+    - DNS server maintains some caching to make the retreival fast.
+##### Working
+
 #### Load Balancers:
 #### Databases:
 #### Key-Value Store:
