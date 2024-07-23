@@ -98,9 +98,13 @@ The data remains as close as to the data from source of truth will be more consi
     
     - Its a phone book of an internet to have the mapping b/w the website domain to IP address as to remember the IPs of multiple website is not feasible.
     - User -> Browser -> ISP -> DNS Arch. -> ISP -> Browser -> Webserver with IPs
-    -  Resource Record: single row in DNS server to get the details is called RR.
+    - Resource Record: single row in DNS server to get the details is called RR.
     - DNS server maintains some caching to make the retreival fast.
-##### Working
+    - DNS names are processed right to left EX vipulpopli.com first it will resolve the .com and direct to the name server and then vipulpopli and so on.
+    - It ensured the AP from CAP as this arch. is read intensive as compare to write.
+    - If we need DNS to tell us which IP to reach a website or service, how will we know the DNS resolver’s IP address? (It seems like a chicken-and-egg problem!)
+
+    
 
 #### Load Balancers:
 #### Databases:
