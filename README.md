@@ -104,9 +104,10 @@ The data remains as close as to the data from source of truth will be more consi
     - It ensured the AP from CAP as this arch. is read intensive as compare to write.
     - If we need DNS to tell us which IP to reach a website or service, how will we know the DNS resolver’s IP address? (It seems like a chicken-and-egg problem!)
 
+#### Load Balancers:
+    - The job of the load balancer is to fairly divide all clients’ requests among the pool of available servers. Load balancers perform this job to avoid overloading or crashing servers.
     
 
-#### Load Balancers:
 #### Databases:
 #### Key-Value Store:
 #### Content Delivery Network:
