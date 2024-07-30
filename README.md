@@ -123,11 +123,14 @@ The data remains as close as to the data from source of truth will be more consi
     - Static Algo's: Do not consider the changing state of the servers.
     - Dynamic Alg's: Consider the changing state of the servers.
     - In practice, dynamic algorithms provide far better results because they maintain a state of serving hosts and are, therefore, worth the effort and complexity.
-    - Stateful LBs: 
-    - Stateless LBs: 
-
+    - Stateful LBs: As the name indicates, stateful load balancing involves maintaining a state of the sessions established between clients and hosting servers. The stateful LB incorporates state information in its algorithm to perform load balancing.
+    - Stateless LBs: Stateless LBs use consistent hashing to make forwarding decisions.However, if infrastructure changes stateless LBs may not be as resilient as stateful LBs because consistent hashing alone isn’t enough to route a request to the correct application server. Therefore, a local state may still be required along with consistent hashing.Therefore, a state maintained across different load balancers is considered as stateful load balancing. Whereas, a state maintained within a load balancer for internal use is assumed as stateless load balancing.
+    - Tier 1 balances the load among the load balancers themselves. Tier 2 enables a smooth transition from tier 1 to tier 3 in case of failures, whereas tier 3 does the actual load balancing between back-end servers. Each tier performs other tasks to reduce the burden on end-servers.
 
 #### Databases:
+
+    - 
+
 #### Key-Value Store:
 #### Content Delivery Network:
 #### Sequencer:
