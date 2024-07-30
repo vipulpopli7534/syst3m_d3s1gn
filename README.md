@@ -106,7 +106,26 @@ The data remains as close as to the data from source of truth will be more consi
 
 #### Load Balancers:
     - The job of the load balancer is to fairly divide all clients’ requests among the pool of available servers. Load balancers perform this job to avoid overloading or crashing servers.
-    
+    - LB provides us the availability , performance benefits and Scalability 
+    - User (Client) -> LB -> Server's
+    - Other Benefits: Health checking of the server.
+    - What if load balancers fail? Are they not a single point of failure (SPOF)?
+    - Global server load balancing (GSLB): GSLB involves the distribution of traffic load across multiple geographical regions. GSLB basically check up on the geigraphical server health and based on that takes the decision to route the traffic to the corresponding locations.
+    - Local load balancing: This refers to load balancing achieved within a data center.
+    - Algos for LB
+      
+        - Round robin: Sequential rotation
+        - Weighted round robin : In case some server have higher capability of handling the requests that server is assigned with weight based on that load is being balanced.
+        - Least Connection: Load is balanced to the server with the least no of active connections.
+        - Least response time: Load is balanced to the server with the least response time.
+        - IP hash: Load is balanced based on the user IP hashed.
+        - URL hash:  Load is balanced based on the URL hashed.
+    - Static Algo's: Do not consider the changing state of the servers.
+    - Dynamic Alg's: Consider the changing state of the servers.
+    - In practice, dynamic algorithms provide far better results because they maintain a state of serving hosts and are, therefore, worth the effort and complexity.
+    - Stateful LBs: 
+    - Stateless LBs: 
+
 
 #### Databases:
 #### Key-Value Store:
