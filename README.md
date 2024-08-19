@@ -140,7 +140,10 @@ The data remains as close as to the data from source of truth will be more consi
         - SQL (Relational)
         - NoSQL (non-Relational)
     - Relational database has a well defined structure such as attributes (columns of the table). NoSQL databases such as document databases often have application-defined structure of data.
+
+##### Relational databases:
     - 
+
 
 
 #### Key-Value Store:
