@@ -129,7 +129,19 @@ The data remains as close as to the data from source of truth will be more consi
 
 #### Databases:
 
+    - To design the system we need to store the permanent data available to maintain the customer state.
+    - Files as a data base have some disadvantages
+
+        - No Concurrency support
+        - Access management
+        - Not scalable for high throughput
+    - Database: Store the organised form of data to have easy retrival and manipulation is DB's
+    - Basic Types
+        - SQL (Relational)
+        - NoSQL (non-Relational)
+    - Relational database has a well defined structure such as attributes (columns of the table). NoSQL databases such as document databases often have application-defined structure of data.
     - 
+
 
 #### Key-Value Store:
 #### Content Delivery Network:
