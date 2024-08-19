@@ -142,7 +142,30 @@ The data remains as close as to the data from source of truth will be more consi
     - Relational database has a well defined structure such as attributes (columns of the table). NoSQL databases such as document databases often have application-defined structure of data.
 
 ##### Relational databases:
-    - 
+    - Relational databases adhere to particular schemas before storing the data. The data stored in relational databases has prior structure. Mostly, this model organizes data into one or more relations (also called tables), with a unique key for each tuple (instance). Each entity of the data consists of instances and attributes, where instances are stored in rows, and the attributes of each instance are stored in columns. Since each tuple has a unique key, a tuple in one table can be linked to a tuple in other tables by storing the primary keys in other tables, generally known as foreign keys.
+    - A Structure Query Language (SQL) is used for manipulating the database.
+    - Relational databases provide the atomicity, consistency, isolation, and durability (ACID) properties to maintain the integrity of the database.
+    - Poplular DBMS
+        - MySQL
+        - Oracle Database
+        - Microsoft SQL Server
+        - IBM DB2
+        - Postgres
+        - SQLite
+    - Flexible SQL provides flexiblility to modify the data , tables
+    - Helps a lot in removing the data redundancy with the help of normalisation.
+    - Concurrency is an important factor while designing an enterprise database. In such a case, the data is read and written by many users at the same time
+    - Relational databases guarantee the state of data is consistent at any time. The export and import operations make backup and restoration easier.
+    - Drawback: Impedance mismatch is the difference between the relational model and the in-memory data structures. The relational model organizes data into a tabular structure with relations and tuples. SQL operation on this structured data yields relations aligned with relational algebra. However, it has some limitations. In particular, the values in a table take simple values that can’t be a structure or a list. The case is different for in-memory, where a complex data structure can be stored. To make the complex structures compatible with the relations, we would need a translation of the data in light of relational algebra.
+
+##### ACID:
+    - Atomicity: A transaction is considered an atomic unit. Therefore, either all the statements within a transaction will successfully execute, or none of them will execute. If a statement fails within a transaction, it should be aborted and rolled back.
+    - Consistency: At any given time, the database should be in a consistent state, and it should remain in a consistent state after every transaction. For example, if multiple users want to view a record from the database, it should return a similar result each time.
+    - Isolation: In the case of multiple transactions running concurrently, they shouldn’t be affected by each other. The final state of the database should be the same as the transactions that were executed sequentially.
+    - Durability: The system should guarantee that completed transactions will survive permanently in the database even in system failure events.
+
+
+
 
 
 
