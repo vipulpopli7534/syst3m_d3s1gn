@@ -158,11 +158,31 @@ The data remains as close as to the data from source of truth will be more consi
     - Relational databases guarantee the state of data is consistent at any time. The export and import operations make backup and restoration easier.
     - Drawback: Impedance mismatch is the difference between the relational model and the in-memory data structures. The relational model organizes data into a tabular structure with relations and tuples. SQL operation on this structured data yields relations aligned with relational algebra. However, it has some limitations. In particular, the values in a table take simple values that can’t be a structure or a list. The case is different for in-memory, where a complex data structure can be stored. To make the complex structures compatible with the relations, we would need a translation of the data in light of relational algebra.
 
-##### ACID:
+###### ACID:
     - Atomicity: A transaction is considered an atomic unit. Therefore, either all the statements within a transaction will successfully execute, or none of them will execute. If a statement fails within a transaction, it should be aborted and rolled back.
     - Consistency: At any given time, the database should be in a consistent state, and it should remain in a consistent state after every transaction. For example, if multiple users want to view a record from the database, it should return a similar result each time.
     - Isolation: In the case of multiple transactions running concurrently, they shouldn’t be affected by each other. The final state of the database should be the same as the transactions that were executed sequentially.
     - Durability: The system should guarantee that completed transactions will survive permanently in the database even in system failure events.
+
+##### Non Relational databases:
+    - These databases are used in applications that require a large volume of semi-structured and unstructured data, low latency, and flexible data models.
+    - Benefits
+        - Simple design
+        - Horizontal scaling: NoSQL makes it easier to scale out since the data related to a specific employee is stored in one document instead of multiple tables over nodes.
+        - Cost: Licenses for many RDBMSs are pretty expensive, while many NoSQL databases are open source and freely available.
+
+    - Types 
+        - Key Value (DynamoDB)
+        - Document (MongoDB)
+        - Column Oritented / Columnar (Cassandra)
+        - Graph (Neo4j)
+    
+    - Drawbacks
+
+######   Key Value
+######   Document
+######   Column Oritented / Columnar
+######   Graph
 
 
 
@@ -182,8 +202,4 @@ The data remains as close as to the data from source of truth will be more consi
 #### Distributed Logging:
 #### Distributed Task Scheduling:
 #### Sharded Counters: 
-
-
-
-
 
