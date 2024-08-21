@@ -179,10 +179,17 @@ The data remains as close as to the data from source of truth will be more consi
     
     - Drawbacks
 
-######   Key Value
+######   Key Value: 
+    - Key-value databases use key-value methods like hash tables to store data in key-value pairs
+
 ######   Document
+    -     A document database is designed to store and retrieve documents in formats like XML, JSON, BSON, and so on. These documents are composed of a hierarchical tree data structure that can include maps, collections, and scalar values. Documents in this type of database may have varying structures and data. MongoDB and Google Cloud Firestore are examples of document databases.
+
+
 ######   Column Oritented / Columnar
+
 ######   Graph
+   
 
 
 
