@@ -178,21 +178,24 @@ The data remains as close as to the data from source of truth will be more consi
         - Graph (Neo4j)
     
     - Drawbacks
+        - Porting from one NoSQL to another will be challenging as no structure is maintained.
+        - NoSQL databases provide different products based on the specific trade-offs between consistency and availability when failures can happen. 
+        -  
 
 ######   Key Value: 
     - Key-value databases use key-value methods like hash tables to store data in key-value pairs
 
 ######   Document
-    -     A document database is designed to store and retrieve documents in formats like XML, JSON, BSON, and so on. These documents are composed of a hierarchical tree data structure that can include maps, collections, and scalar values. Documents in this type of database may have varying structures and data. MongoDB and Google Cloud Firestore are examples of document databases.
+    - A document database is designed to store and retrieve documents in formats like XML, JSON, BSON, and so on. These documents are composed of a hierarchical tree data structure that can include maps, collections, and scalar values. Documents in this type of database may have varying structures and data. MongoDB and Google Cloud Firestore are examples of document databases.
 
 
 ######   Column Oritented / Columnar
+    - It store the data in column instead of the rows.Popular columnar databases include HBase, Hypertable, and Amazon Redshift.
 
 ######   Graph
+    - Graph databases use the graph data structure to store data, where nodes represent entities, and edges show relationships between entities.
    
-
-
-
+##### Data Replication:
 
 
 
