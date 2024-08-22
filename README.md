@@ -196,6 +196,24 @@ The data remains as close as to the data from source of truth will be more consi
     - Graph databases use the graph data structure to store data, where nodes represent entities, and edges show relationships between entities.
    
 ##### Data Replication:
+    - Replication refers to keeping multiple copies of the data at various nodes (preferably geographically distributed) to achieve availability, scalability, and performance.
+    
+    - Complexities that could arise due to replication are as follows:
+        - How do we keep multiple copies of data consistent with each other?
+        - How do we deal with failed replica nodes?
+        - Should we replicate synchronously or asynchronously?
+        - How do we deal with replication lag in case of asynchronous replication?
+        - How do we handle concurrent writes?
+        - What consistency model needs to be exposed to the end programmers?
+    
+    - Types
+        - Sync:
+            In synchronous replication, the primary node waits for acknowledgments from secondary nodes about updating the data. After receiving acknowledgment from all secondary nodes, the primary node reports success to the client.
+            Latency from primary to the client.
+        - Async
+            Whereas in asynchronous replication, the primary node doesn’t wait for the acknowledgment from the secondary nodes and reports success to the client after updating itself.
+            Data loss if fails to write the data eventually
+        
 
 
 
