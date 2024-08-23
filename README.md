@@ -213,7 +213,24 @@ The data remains as close as to the data from source of truth will be more consi
         - Async
             Whereas in asynchronous replication, the primary node doesn’t wait for the acknowledgment from the secondary nodes and reports success to the client after updating itself.
             Data loss if fails to write the data eventually
-        
+    
+    - Models
+        - Single leader or primary-secondary replication
+            - Primary node is responsible to write the the replicated data in the secondary node. We can distribute the read load to primary and secondary hence will be helpfurl for read intensive apps. Async Replication is done from primary to secondary.
+            - Statment based replication: is an approach used in MySQL databases. In this approach, the primary node executes the SQL statements such as INSERT, UPDATE, DELETE, etc., and then the statements are written into a log file. In the next step, the log file is sent to the secondary nodes for execution.
+            - Write-ahead log (WAL) shipping is a data replication technique used in both PostgreSQL and Oracle. In this technique, when a transaction occurs, it’s initially recorded in a transactional log file, and the log file is written to disk. Subsequently, the recorded operations are executed on the primary database before being transmitted to secondary nodes for execution. 
+            - Logical (row-based) replication is utilized in various relational databases, including PostgreSQL and MySQL. In this approach, changes made to the database are captured at the level of individual rows and then replicated to the secondary nodes. Instead of replicating the actual physical changes made to the database, this approach captures the operations in a logical format and then executes them on secondary nodes.
+
+
+        - Multi-leader replication
+            -  There are multiple primary nodes that process the writes and send them to all other primary and secondary nodes to replicate.
+            - Being 2 primary node there occurs a condition of the conflicts if the same data is being updated from two diff primary node.
+            - Divide the records among the primary nodes.It will be an issue in case of diff regions we have to still access it via the far primary node.
+            - Topology Circular, Star and all to all
+
+        - Peer-to-peer or leaderless replication
+            - All the nodes have equal weightage and can accept read and write requests. This replication scheme can be found in the Cassandra database.
+            - Quorums: If we have 𝑛 n nodes, then every write must be updated in at least 𝑤 w nodes to be considered a success, and we must read from 𝑟 r nodes. We’ll get an updated value from reading as long as 𝑤 + 𝑟 > 𝑛 w+r>n because at least one of the nodes must have an updated write from which we can read. Quorum reads and writes adhere to these 𝑟 r and 𝑤 w values. These 𝑛 n , 𝑤 w , and 𝑟 r are configurable in Dynamo-style databases. 
 
 
 
