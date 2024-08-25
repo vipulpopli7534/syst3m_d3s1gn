@@ -231,8 +231,20 @@ The data remains as close as to the data from source of truth will be more consi
         - Peer-to-peer or leaderless replication
             - All the nodes have equal weightage and can accept read and write requests. This replication scheme can be found in the Cassandra database.
             - Quorums: If we have 𝑛 n nodes, then every write must be updated in at least 𝑤 w nodes to be considered a success, and we must read from 𝑟 r nodes. We’ll get an updated value from reading as long as 𝑤 + 𝑟 > 𝑛 w+r>n because at least one of the nodes must have an updated write from which we can read. Quorum reads and writes adhere to these 𝑟 r and 𝑤 w values. These 𝑛 n , 𝑤 w , and 𝑟 r are configurable in Dynamo-style databases.
-            
-             
+
+##### Data Replication:
+    - To distribute the load we need to have the multiple node for teh database so that write and read on data will be distributed to make teh system more scalable.
+    - The process to divide the data into nodes is called sharding / partiioning 
+    - Sharding must be done equally to avoid the unwanted loads on the particular nodes and to avoid the bottlenecks.
+    - Ways Vertical & Horizontal
+    - Vertical Shard: 
+        - Dividing the data table into  diff nodes is called vertical sharding.
+        - Often, vertical sharding is used to increase the speed of data retrieval from a table consisting of columns with very wide text or a binary large object (blob). In this case, the column with large text or a blob is split into a different table.
+    - Horizontal Shard:
+        - Splitting data table row wise.
+        - Each partition of the original table distributed over database servers is called a shard.
+
+
 
 
 
