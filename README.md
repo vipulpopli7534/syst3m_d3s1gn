@@ -243,6 +243,13 @@ The data remains as close as to the data from source of truth will be more consi
     - Horizontal Shard:
         - Splitting data table row wise.
         - Each partition of the original table distributed over database servers is called a shard.
+        - Key-range based sharding
+        - Hash based sharding
+
+    - Partitioning and secondary indexes
+        - 
+
+
 
 
 
