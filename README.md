@@ -247,7 +247,8 @@ The data remains as close as to the data from source of truth will be more consi
         - Hash based sharding
 
     - Partitioning and secondary indexes
-        - 
+        -
+         
 
 
 
